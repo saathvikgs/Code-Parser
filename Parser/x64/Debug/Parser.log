@@ -1,0 +1,10 @@
+﻿  Parser.cpp
+  ConfigureParser.cpp
+  ActionsAndRules.cpp
+  Utilities.cpp
+  Tokenizer.cpp
+  SemiExp.cpp
+  ScopeStack.cpp
+  FileSystem.cpp
+  Generating Code...
+  Parser.vcxproj -> D:\OOD\Project2\x64\Debug\Parser.lib

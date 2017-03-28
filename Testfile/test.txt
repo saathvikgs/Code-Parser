@@ -1,0 +1,88 @@
+#include<iostream>
+#include<string>
+#include<vector>
+
+
+struct element1
+{
+	std::string type;
+	std::string name;
+	size_t startLineCount = 0;
+	size_t endLineCount = 0;
+	std::string show()
+	{
+		std::ostringstream temp;
+		temp << "(";
+		temp << type;
+		temp << ", ";
+		temp << name;
+		temp << ", ";
+		temp << startLineCount;
+		temp << ", ";
+		temp << endLineCount;
+		temp << ")";
+		return temp.str();
+	}
+	std::vector<element1*> _children;
+};
+
+class elsement2
+{
+	public:
+	Ast* astRoot = new Ast;
+	element* root = new element;
+	void addRoot()
+	{
+		root->type = "namespace";
+		root->name = "global";
+		stack.push(root);
+		astRoot->setRoot(root);
+	}
+}
+static void disp()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		while (i != 10)
+		{
+			if (1 > 7)
+			{
+				break;
+			}
+			else 
+			{
+				i = 8;
+			}
+		}
+	}
+}
+
+bool Parser:: handleSwitch()
+{
+	int i;
+	cin>>i;	
+switch(i) {
+	case 1 : std::cout<<"1\n";
+	case 2 : std::cout<<"2\n";
+	default : std::cout<<"No output\n";
+}
+}
+
+
+
+auto l = [](int i) 
+{ std::cout << "The answer is " << i; };
+
+auto func = []() 
+{
+	std::cout << "Hello\n";
+};
+
+
+std::function<std::string(int)> f = [](int i)
+{
+	std::ostringstream convert;
+	convert << i;                      // lambda captures value of i
+	return convert.str();
+};
+
